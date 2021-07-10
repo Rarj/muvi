@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black_25272A">
+
+    <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/image_profile"
+      android:layout_width="72dp"
+      android:layout_height="72dp"
+      android:layout_margin="16dp"
+      android:adjustViewBounds="true"
+      android:scaleType="fitXY"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circle"
+      tools:src="@tools:sample/backgrounds/scenic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_caster_name"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="16dp"
+      android:ellipsize="end"
+      android:gravity="center_horizontal"
+      android:maxLines="2"
+      android:singleLine="false"
+      android:textColor="@color/white_70"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/image_profile"
+      tools:text="Dominic Toretto" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
